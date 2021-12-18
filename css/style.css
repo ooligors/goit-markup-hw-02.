@@ -1,5 +1,6 @@
 :root {
   --accent-color: #2196f3;
+  --background: #2f303a;
 }
 
 body {
@@ -61,10 +62,14 @@ body {
   letter-spacing: 0.02em;
   color: #757575;
 }
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
 
 /* -------------------------------------------hero------------------------------------------------*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background);
 }
 .hero-title {
   font-style: normal;
@@ -93,6 +98,7 @@ body {
   border-radius: 4px;
 
   color: #ffffff;
+  cursor: pointer;
 }
 
 .hero-button:hover,
@@ -117,7 +123,6 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 .advantages-text {
   font-size: 14px;
@@ -133,7 +138,6 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 
 /* <!----------------------------------- секція наша команда -------------------------> */
@@ -143,7 +147,6 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 
 .team-card1,
@@ -155,7 +158,6 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
 }
 .team-profession {
   font-size: 16px;
@@ -186,7 +188,7 @@ body {
   color: #ffffff;
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background);
 }
 .footer-googlemap {
   font-style: normal;
@@ -213,7 +215,8 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-list .link:hover {
+.footer-list .link:hover,
+.footer-list .link:focus {
   color: var(--accent-color);
 }
 /* ------------------------------------------портфоліо----------------------------------------- */
@@ -228,6 +231,7 @@ body {
 
   background: #f5f4fa;
   border-radius: 4px;
+  cursor: pointer;
 }
 .Portfolio-button:active,
 .Portfolio-button:focus,
@@ -244,7 +248,6 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
 }
 .Portfolio-aftertitle {
   font-weight: 400;

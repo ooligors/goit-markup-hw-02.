@@ -1,6 +1,7 @@
 :root {
   --accent-color: #2196f3;
   --background: #2f303a;
+  --second-font: 'Raleway';
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 /* --------------------------------------------header------------------------------ */
 
 .header-logo {
-  font-family: 'Raleway';
+  font-family: var(--second-font);
   font-weight: 700;
   font-size: 26px;
   color: var(--accent-color);
@@ -169,7 +170,7 @@ body {
 
 /* -----------------------------------------------footer------------------------------------------- */
 .footer-logo {
-  font-family: Raleway;
+  font-family: var(--second-font);
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);

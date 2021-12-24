@@ -154,7 +154,7 @@ body {
   text-transform: uppercase;
   color: var(--secondary-color);
   max-width: 696px;
-  margin-left : auto;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -244,8 +244,6 @@ body {
 .what-we-do-list {
   display: flex;
 }
-}
-
 
 /* <!----------------------------------- секція наша команда -------------------------> */
 .team {
@@ -303,7 +301,7 @@ body {
   background-color: var(--dark-background);
   padding-top: 60px;
   padding-bottom: 60px;
-} 
+}
 .footer-list .link {
   font-style: normal;
   font-weight: 400;
@@ -330,6 +328,24 @@ body {
 }
 
 /* ------------------------------------------портфоліо----------------------------------------- */
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+.portf-btn {
+  margin-bottom: 56px;
+}
+
+.list-img {
+  flex-wrap: wrap;
+}
+.portfolio {
+  padding-top: 100px;
+  padding-bottom: 366px;
+  /* padding-left: 215px;
+padding-right: 15px; */
+}
+
 .portfolio-button {
   font-family: inherit;
   font-weight: 500;
@@ -337,12 +353,16 @@ body {
   line-height: 1.62;
   text-align: center;
   color: var(--primary-color);
-
   background: var(--light-background);
   border-radius: 4px;
   cursor: pointer;
+  padding: 6px 22px;
 }
 
+.portfolio-image:not(:last-child) {
+  margin-right: 30px;
+}
+.portfolio-button.active,
 .portfolio-button:active,
 .portfolio-button:focus,
 .portfolio-button:hover {
@@ -359,10 +379,14 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 .portfolio-aftertitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   color: var(--tertiary-color);
+}
+.portfolio-item {
+  margin: 4px;
 }
